@@ -12,3 +12,5 @@ jobs:
         run: |
           echo "New issue has been opened!"
           echo "The issue was titled: ${{ github.event.issue.title }}"
+          echo "The issue was opened by: ${{ github.event.issue.user.login }}"
+          echo "The issue was created at: ${{ github.event.issue.created_at }}"

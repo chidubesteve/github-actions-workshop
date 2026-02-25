@@ -17,6 +17,8 @@
     "scripts": {
         "start": "echo \"just drag and drop the index file into browser\" && exit 0",
         "test": "jest",
+        "lint": "standard",
+        "lint:fix": "standard --fix",
         "nothing": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
