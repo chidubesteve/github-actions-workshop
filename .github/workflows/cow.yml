@@ -1,0 +1,19 @@
+name: Cowsays Workflow
+
+on:
+    workflow_dispatch:
+        inputs:
+            message:
+                description: 'What do you want the cow to say?'
+                required: true
+                default: 'Moo!'
+
+jobs:
+    cowsay:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Cowsay
+              uses: mscoutermarsh/cowsays-action@master
+              with:
+               text: "${{ github.event.inputs.message }}"
+               color: "green"
