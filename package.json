@@ -27,6 +27,8 @@
         "standard": "^17.1.2"
     },
     "standard": {
-        "env": ["jest"]
+        "env": [
+            "jest"
+        ]
     }
 }
