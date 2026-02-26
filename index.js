@@ -5,25 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSecond = parseInt(document.getElementById('second').value)
 
   /**
-     * Perform the maths once at the start before
-     * any changes are made
-     */
-      performMaths(currentFirst, currentSecond)
+   * Perform the maths once at the start before
+   * any changes are made
+   */
+  performMaths(currentFirst, currentSecond)
 
   /**
-     * On change listener for first value,
-     * when it changes new math is performed
-     */
+   * On change listener for first value,
+   * when it changes new math is performed
+   */
   document.getElementById('first').addEventListener('change', (event) => {
     console.log('first changesd: ' + event.target.value)
     currentFirst = parseInt(event.target.value)
-    performMaths(currentFirst, currentSecond);;
+    performMaths(currentFirst, currentSecond)
   })
 
   /**
-     * On change listener for second value,
-     * when it changes new math is performed
-     */
+   * On change listener for second value,
+   * when it changes new math is performed
+   */
   document.getElementById('second').addEventListener('change', (event) => {
     console.log('second changesd: ' + event.target.value)
     currentSecond = parseInt(event.target.value)
