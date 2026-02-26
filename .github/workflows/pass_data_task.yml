@@ -17,16 +17,20 @@ jobs:
       - name: Calculate the math answer
         id: math_answer
         shell: bash
+        # I need to implement this `Change the lines with the comment `#TODO edit here` so that:
+#• The first step (id: math_answer) saves the answer to the outputs
+#• The second step reads the saved value and prints it out (echo)` but i don't know how to and what this values/variables means
         run: |
           exm="example, you can remove me"
           ans=$((${{ github.event.inputs.math_number }} + 10))
           echo "You need to pass this value: $ans"
-          echo "EXAMPLE=$exm" >> "$GITHUB_OUTPUT" #TODO edit here
+          echo "EXAMPLE=$exm" >> "$GITHUB_OUTPUT"
+          echo "ANSWER=$ans" >> "$GITHUB_OUTPUT" 
 
       - name: Show the answer
         run: |
           echo "The Answer to the maths result is:"
-          echo "___________" #TODO edit here
+          echo "The answers is: ${{steps.math_answer.outputs.ANSWER}}"
 
 
 
