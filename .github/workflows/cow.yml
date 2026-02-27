@@ -15,12 +15,11 @@ jobs:
             - name: Checkout code 
               uses: actions/checkout@v4
             - name: Check Branch Name
-              uses: chidubesteve/branchCheck@v1.1
+              uses: chidubesteve/branchCheck@v1.2
               with:
-                allowed_branch: "master" # Change this to the branch you want to allow
+                allowed_branch: "main" # Change this to the branch you want to allow
             - name: Cowsay
               uses: mscoutermarsh/cowsays-action@master
               with:
                text: "${{ github.event.inputs.message }}"
                color: "green"
-               
