@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * when it changes new math is performed
    */
   document.getElementById('first').addEventListener('change', (event) => {
-    console.log('first changesd: ' + event.target.value)
+    console.log('first changes: ' + event.target.value)
     currentFirst = parseInt(event.target.value)
     performMaths(currentFirst, currentSecond)
   })
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * when it changes new math is performed
    */
   document.getElementById('second').addEventListener('change', (event) => {
-    console.log('second changesd: ' + event.target.value)
+    console.log('second changes: ' + event.target.value)
     currentSecond = parseInt(event.target.value)
     performMaths(currentFirst, currentSecond)
   })
