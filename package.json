@@ -11,7 +11,7 @@
         "url": "git+https://github.com/Kardelio/github-actions-workshop.git"
     },
     "license": "ISC",
-    "author": "",
+    "author": "chidubesteve",
     "type": "commonjs",
     "main": "index.js",
     "scripts": {

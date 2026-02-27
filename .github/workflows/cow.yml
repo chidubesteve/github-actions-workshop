@@ -12,6 +12,10 @@ jobs:
     cowsay:
         runs-on: ubuntu-latest
         steps:
+            - name: Check Branch Name
+              uses: chidubesteve/branchCheck@v1.1
+              with:
+                allowed_branch: "main" # Change this to the branch you want to allow
             - name: Cowsay
               uses: mscoutermarsh/cowsays-action@master
               with:
