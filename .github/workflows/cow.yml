@@ -17,7 +17,7 @@ jobs:
             - name: Check Branch Name
               uses: chidubesteve/branchCheck@v1.2
               with:
-                allowed_branch: "main" # Change this to the branch you want to allow
+                allowed_branch: "master" # Change this to the branch you want to allow
             - name: Cowsay
               uses: mscoutermarsh/cowsays-action@master
               with:
